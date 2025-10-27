@@ -21,7 +21,7 @@ DOWNLOAD_FOLDER = "downloads"
 os.makedirs(DOWNLOAD_FOLDER, exist_ok=True)
 
 def main():
-    st.title("Midrand Chapel YouTube to MP3 Downloader")
+    st.title("YouTube to MP3 Downloader")
     st.write("Enter a YouTube URL of the sermon below to download the audio as an MP3 file.")
 
     url = st.text_input("YouTube URL", "")
@@ -52,3 +52,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

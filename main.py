@@ -33,9 +33,11 @@ def main():
             try:
                 ydl_opts = {
                     "format": "bestaudio/best",
+                    'writethumbnail': True,
                     "outtmpl": os.path.join(DOWNLOAD_FOLDER, "%(title)s.%(ext)s"),
                     "postprocessors": [{
                         "key": "FFmpegExtractAudio",
+                        "key": "EmbedThumbnail",
                         "preferredcodec": "mp3",
                         "preferredquality": "192",
                     }],
